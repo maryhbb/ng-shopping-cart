@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ShoppingCartItemModel} from "./shared/models/shopping-cart-item.model";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping-cart';
+  items: ShoppingCartItemModel []= [
+    {id: 1, count: 1, image: "assets/images/3_large.jpg", name: "iPhone 14 Pro" },
+    {id: 2, count: 1, image: "assets/images/2_large.jpg", name: "iPhone 14" },
+    {id: 3, count: 1, image: "assets/images/1_large.jpg", name: "iPhone 13" },
+    {id: 4, count: 1, image: "assets/images/4_large.jpg", name: "iPhone SE" }
+  ]
 }

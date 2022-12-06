@@ -1,0 +1,15 @@
+
+<div class="shopping-cart-item">
+<div class="content">
+  <img class="product-img" [src]="item.image"  alt="iPhone14"/>
+  <div class="product-name">{{item.name}}</div>
+
+  <div class="action-list">
+    <button class="button-plus">+</button>
+    <input [value]="item.count"  disabled class="textfield" type="number">
+    <button class="button-minus">-</button>
+    <button class="button-delete">Delete</button>
+
+  </div>
+</div>
+</div>
