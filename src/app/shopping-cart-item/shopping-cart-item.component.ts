@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {ShoppingCartItemModel} from "../shared/models/shopping-cart-item.model";
 
 @Component({
@@ -8,6 +8,7 @@ import {ShoppingCartItemModel} from "../shared/models/shopping-cart-item.model";
 })
 export class ShoppingCartItemComponent {
 @Input() item :ShoppingCartItemModel = {};
+@Output() onDelete= new EventEmitter<number>();
 
 
  add(){
@@ -17,5 +18,9 @@ this.item.count = currentCount +1;
  sub (){
 const currentCount :number = this.item.count ?? 0;
 this.item.count = currentCount > 0 ? (currentCount -1 ):0;
+ }
+
+ del(itemId?: number){
+this.onDelete.emit(itemId)
  }
 }

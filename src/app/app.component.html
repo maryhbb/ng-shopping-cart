@@ -1,6 +1,9 @@
 <h1 class="text-center">Shopping Cart</h1>
 
 
-<div >
-  <app-shopping-cart-item *ngFor="let item of items" [item]="item"></app-shopping-cart-item>
+<div>
+  <app-shopping-cart-item
+    *ngFor="let item of items"
+    [item]="item"
+    (onDelete)="onDeleteEvent($event)"></app-shopping-cart-item>
 </div>
