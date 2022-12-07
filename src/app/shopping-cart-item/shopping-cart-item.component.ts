@@ -8,4 +8,14 @@ import {ShoppingCartItemModel} from "../shared/models/shopping-cart-item.model";
 })
 export class ShoppingCartItemComponent {
 @Input() item :ShoppingCartItemModel = {};
+
+
+ add(){
+const currentCount :number = this.item.count ?? 0;
+this.item.count = currentCount +1;
+  }
+ sub (){
+const currentCount :number = this.item.count ?? 0;
+this.item.count = currentCount > 0 ? (currentCount -1 ):0;
+ }
 }

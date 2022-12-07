@@ -5,9 +5,9 @@
   <div class="product-name">{{item.name}}</div>
 
   <div class="action-list">
-    <button class="button-plus">+</button>
+    <button class="button-plus" (click)="add()">+</button>
     <input [value]="item.count"  disabled class="textfield" type="number">
-    <button class="button-minus">-</button>
+    <button class="button-minus" (click)="sub()">-</button>
     <button class="button-delete">Delete</button>
 
   </div>
