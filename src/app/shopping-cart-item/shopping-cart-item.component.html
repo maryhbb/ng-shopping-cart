@@ -1,15 +1,37 @@
-<div class="shopping-cart-item">
-  <div class="content">
-    <img class="product-img" [src]="item.image" alt="iPhone14"/>
-    <div class="product-name">{{item.name}}</div>
-    <div class="product-price">Ab {{item.price}} €</div>
 
-    <div class="action-list">
-      <button class="button-plus" (click)="add()">+</button>
-      <input [value]="item.count" disabled class="textfield" type="number">
-      <button class="button-minus" (click)="sub()">-</button>
-      <button class="button-delete" (click)="del(item?.id)">Delete</button>
+  <div class="card-item">
+    <img class="image" [src]="item.image" alt="iPhone14"/>
+    <div class="name-and-price">
+      <div class="desc">{{item.name}}</div>
+      <div class="price">Ab {{item.price}} €</div>
+    </div>
+    <div class="count">
+      <button  class="plus-minus" (click)="add()">+</button>
+      <input [value]="item.count" disabled class="input-count" type="number">
+      <button  class="plus-minus" (click)="sub()">-</button>
+      <button class="button-delete" (click)="del(item.id)">Delete</button>
 
     </div>
   </div>
-</div>
+
+
+
+
+
+
+
+<!--<div class="shopping-cart-item">-->
+<!--  <div class="content">-->
+<!--    <img class="product-img" [src]="item.image" alt="iPhone14"/>-->
+<!--    <div class="product-name">{{item.name}}</div>-->
+<!--    <div class="product-price">Ab {{item.price}} €</div>-->
+
+<!--    <div class="action-list">-->
+<!--      <button class="button-plus" (click)="add()">+</button>-->
+<!--      <input [value]="item.count" disabled class="textfield" type="number">-->
+<!--      <button class="button-minus" (click)="sub()">-</button>-->
+<!--      <button class="button-delete" (click)="del(item?.id)">Delete</button>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

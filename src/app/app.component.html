@@ -1,9 +1,14 @@
 <h1 class="text-center">Shopping Cart</h1>
 
 
-<div>
+<main class="items">
   <app-shopping-cart-item
     *ngFor="let item of items"
     [item]="item"
     (onDelete)="onDeleteEvent($event)"></app-shopping-cart-item>
+
+<div class="total-price">
+<div >Total Price: {{totalPrice}} € </div>
+  <button>Place Order</button>
 </div>
+</main>

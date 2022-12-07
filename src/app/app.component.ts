@@ -14,6 +14,7 @@ export class AppComponent {
     {id: 3, count: 0, image: "assets/images/1_large.jpg", name: "iPhone 13", price: 799},
     {id: 4, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549}
   ]
+  totalPrice :number = 0;
 
   onDeleteEvent($cartItemId: number) {
     const index = this.items.findIndex(item => item.id === $cartItemId);

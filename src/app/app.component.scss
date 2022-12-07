@@ -1,31 +1,67 @@
+//
+//:host {
+//  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//  font-size: 14px;
+//  color: #333;
+//  box-sizing: border-box;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+//
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6 {
+//  margin: 8px 0;
+//}
+//
+//p {
+//  margin: 0;
+//}
+//
+//.spacer {
+//  flex: 1;
+//}
+//
+//.text-center {
+//  text-align: center;
+//  align-items: center;
+//}
+//.total-price {
+//  border: 2px solid #000;
+//  width: 100%;
+//  padding: 1.5em 0.5em;
+//  box-sizing: border-box;
+//  font-weight: bold;
+//  font-size: 20px;
+//}
+//
 
-:host {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  color: #333;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+main.items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px 0;
-}
-
-p {
-  margin: 0;
-}
-
-.spacer {
-  flex: 1;
-}
-
-.text-center {
+h1{
   text-align: center;
-}
+  font-family: "American Typewriter", sans-serif;
 
+}
+.total-price {
+  padding: 0.75em 0.5em;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "American Typewriter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+
+}
+.total-price>button{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "American Typewriter", sans-serif;
+}
