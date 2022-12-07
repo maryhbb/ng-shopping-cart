@@ -9,10 +9,10 @@ import {ShoppingCartItemModel} from "./shared/models/shopping-cart-item.model";
 export class AppComponent {
   title = 'shopping-cart';
   items: ShoppingCartItemModel [] = [
-    {id: 1, count: 0, image: "assets/images/3_large.jpg", name: "iPhone 14 Pro"},
-    {id: 2, count: 0, image: "assets/images/2_large.jpg", name: "iPhone 14"},
-    {id: 3, count: 0, image: "assets/images/1_large.jpg", name: "iPhone 13"},
-    {id: 4, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE"}
+    {id: 1, count: 0, image: "assets/images/3_large.jpg", name: "iPhone 14 Pro", price: 1299},
+    {id: 2, count: 0, image: "assets/images/2_large.jpg", name: "iPhone 14", price: 999},
+    {id: 3, count: 0, image: "assets/images/1_large.jpg", name: "iPhone 13", price: 799},
+    {id: 4, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549}
   ]
 
   onDeleteEvent($cartItemId: number) {

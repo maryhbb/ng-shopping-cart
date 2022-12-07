@@ -3,4 +3,5 @@ export interface ShoppingCartItemModel {
   image? :String;
   count? :number;
   id? :number;
+  price? :number;
 }
