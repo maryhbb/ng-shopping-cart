@@ -15,6 +15,9 @@ export class AppComponent {
     {id: 4, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
     {id: 5, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
     {id: 6, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
+    {id: 7, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
+    {id: 8, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
+
   ]
   totalPrice :number = 0;
 
