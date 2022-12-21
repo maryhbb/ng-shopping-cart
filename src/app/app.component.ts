@@ -13,11 +13,7 @@ export class AppComponent {
     {id: 2, count: 0, image: "assets/images/2_large.jpg", name: "iPhone 14", price: 999},
     {id: 3, count: 0, image: "assets/images/1_large.jpg", name: "iPhone 13", price: 799},
     {id: 4, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
-    {id: 5, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
-    {id: 6, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
-    {id: 7, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
-    {id: 8, count: 0, image: "assets/images/4_large.jpg", name: "iPhone SE", price: 549},
-
+    
   ]
   totalPrice :number = 0;
 
@@ -25,4 +21,6 @@ export class AppComponent {
     const index = this.items.findIndex(item => item.id === $cartItemId);
     this.items.splice(index, 1);
   }
+
+
 }
