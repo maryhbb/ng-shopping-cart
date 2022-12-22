@@ -15,6 +15,18 @@ export class AppComponent implements OnInit {
     const index = this.items.findIndex(item => item.id === $cartItemId);
     this.items.splice(index, 1);
   }
+  onCountUpdatedEvent($event: ShoppingCartItemModel){
+    const index = this.items.findIndex(item => item.id === $event.id);
+    this.items[index] = $event
+  }
+
+  refresh() {
+    let sumPrice: number = 0;
+    this.items.forEach(item=>{
+      sumPrice += (item.price ?? 0) * (item.count ?? 0);
+    });
+    this.totalPrice = sumPrice
+  }
 
   ngOnInit(): void {
     this.initCart();
@@ -29,11 +41,5 @@ export class AppComponent implements OnInit {
   ]
     this.refresh()
   }
-  private refresh() {
-    let sumPrice: number = 0;
-    this.items.forEach(item=>{
-      sumPrice += item.price ?? 0;
-});
-    this.totalPrice = sumPrice
-  }
+
 }

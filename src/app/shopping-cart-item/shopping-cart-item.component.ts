@@ -9,8 +9,8 @@ import {ShoppingCartItemModel} from "../shared/models/shopping-cart-item.model";
 export class ShoppingCartItemComponent {
   @Input() item: ShoppingCartItemModel = {};
   @Output() onDelete = new EventEmitter<number>();
-  @Output() onCountUpdated = new EventEmitter<ShoppingCartItemModel>;
-  @Output() onRefresh = new EventEmitter;
+  @Output() onCountUpdated = new EventEmitter<ShoppingCartItemModel>();
+  @Output() onRefresh = new EventEmitter();
 
 
   add() {
