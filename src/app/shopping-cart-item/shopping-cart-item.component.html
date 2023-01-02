@@ -1,15 +1,14 @@
-
-  <div class="card-item">
-    <img class="image" [src]="item.image" alt="iPhone14"/>
-    <div class="name-and-price">
-      <div class="desc">{{item.name}}</div>
-      <div class="price">Ab {{item.price}} €</div>
-    </div>
-    <div class="count">
-      <button  class="plus-minus" (click)="add()">+</button>
-      <input [value]="item.count" disabled class="input-count" type="number">
-      <button  class="plus-minus" (click)="sub()">-</button>
-      <button class="button-delete" (click)="del(item.id)">Delete</button>
-    </div>
+<div class="card-item">
+  <img [src]="item.image" alt="iPhone14" class="image"/>
+  <div class="name-and-price">
+    <div class="desc">{{item.name}}</div>
+    <div class="price">Ab {{item.price}} €</div>
   </div>
+  <div class="count">
+    <button (click)="add()" class="plus-minus">+</button>
+    <input [value]="item.count" class="input-count" disabled type="number">
+    <button (click)="sub()" class="plus-minus">-</button>
+    <button (click)="del(item.id)" class="button-delete">Delete</button>
+  </div>
+</div>
 

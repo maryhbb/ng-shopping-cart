@@ -3,7 +3,6 @@
   box-sizing: border-box;
 }
 
-
 .card-item {
   border: 1px solid #000;
   display: flex;
@@ -36,21 +35,22 @@
 .card-item .name-and-price .price {
   color: blue;
   font-family: "American Typewriter", sans-serif;
-
 }
 
 .card-item > .count {
   min-width: 20px;
 }
 
-.button-delete{
+.button-delete {
   margin-left: 0.5em;
   font-size: 15px;
 }
+
 .input-count {
   width: 2.5rem;
   font-size: 15px;
 }
+
 .plus-minus {
   width: 2.5rem;
   font-size: 15px;
