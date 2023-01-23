@@ -12,4 +12,3 @@ https://maryhbb.github.io/ng-shopping-cart/
 
 ![](src/assets/images/ax.png)
 
-Test
